@@ -30,69 +30,68 @@
     compatible = "zmk,combos";
     timeout-ms = <2>;
     grave {
-      key-positions = <1 13>;
+      key-positions = <0 10>;
       bindings = <&kp GRAVE>;
     };
     combo_esc {
-      key-positions = <2 14>;
+      key-positions = <1 11>;
       bindings = <&kp ESC>;
     };
+    lshift {
+      key-positions = <2 15>;
+      bindings = <&skq LSHIFT>;
+    };
+    semi {
+      key-positions = <3 16>;
+      bindings = <&kp SEMI>;
+    };
+
+    comm {
+      key-positions = <6 16>;
+      bindings = <&kp COMMA>;
+    };
+    rshift {
+      key-positions = <7 17>;
+      bindings = <&skq RSHIFT>;
+    }; 
     forward_slash {
-      key-positions = <9 21>;
+      key-positions = <8 18>;
       bindings = <&kp FSLH>;
     };
     back_slash {
-      key-positions = <10 22>;
+      key-positions = <9 19>;
       bindings = <&kp BSLH>;
     };
+
     lpar {
-      key-positions = <26 28>;
+      key-positions = <22 24>;
       bindings = <&kp LPAR>;
     };
 
     z {
-      key-positions = <26 27>;
+      key-positions = <22 23>;
       bindings = <&kp Z>;
     };
     quot {
-      key-positions = <27 28>;
+      key-positions = <23 24>;
       bindings = <&kp APOS>;
     };
-    semi {
-      key-positions = <4 16>;
-      bindings = <&kp SEMI>;
-    };
 
-    lshift {
-      key-positions = <3 15>;
-      bindings = <&skq LSHIFT>;
-    };
-    rshift {
-      key-positions = <8 20>;
-      bindings = <&skq RSHIFT>;
-    }; 
     rpar {
-      key-positions = <33 35>;
+      key-positions = <27 29>;
       bindings = <&kp RPAR>;
     };
-     
-    comm {
-      key-positions = <7 19>;
-      bindings = <&kp COMMA>;
-    };
-     
     dot {
-      key-positions = <33 34>;
+      key-positions = <27 28>;
       bindings = <&kp DOT>;
     };
-
     q {
-      key-positions = <34 35>;
+      key-positions = <28 29>;
       bindings = <&kp Q>;
     };
 
     combo_cw {
-      key-positions = <28 33>;
+      key-positions = <24 27>;
       bindings = <&caps_word>;
     };
   };
@@ -145,63 +144,50 @@
     default_layer {
       label = "ENGRAM";
       bindings = <
-&none  &kp B    &kp Y    &kp O    &kp U    &kp COLON                                     &kp LT     &kp L    &kp D     &kp W    &kp V    &none
-&none  &kp C    &kp I    &kp E    &kp A    &kp TILDE                                     &kp QMARK  &kp H    &kp T     &kp S    &kp N    &none
-&none  &kp G    &kp X    &kp J    &kp K    &kp DQT         &kp PG_UP  &kp PG_DN          &kp GT     &kp R    &kp M     &kp F    &kp P    &none
-                     &kp LGUI &lt L_LOWER TAB  &kp SPC &kp RALT        &kp DEL &kp BSPC &lt L_RAISE ENTER &kp LCTRL  
+         &kp B    &kp Y    &kp O    &kp U    &kp COLON                                     &kp LT     &kp L    &kp D     &kp W    &kp V
+         &kp C    &kp I    &kp E    &kp A    &kp TILDE                                     &kp QMARK  &kp H    &kp T     &kp S    &kp N
+&kp RALT &kp G    &kp X    &kp J    &kp K    &kp DQT                                       &kp GT     &kp R    &kp M     &kp F    &kp P &kp DEL 
+                                &kp LGUI &lt L_LOWER TAB  &kp SPC         &kp BSPC &lt L_RAISE ENTER &kp LCTRL  
       >;
     };
 
     qwerty_layer {
       label = "QWERTY";
       bindings = <
-_______  &kp Q    &kp W    &kp E    &kp R    &kp T                                     &kp Y    &kp U    &kp I     &kp O    &kp P    _______
-_______  &kp A    &kp S    &kp D    &kp F    &kp G                                     &kp H    &kp J    &kp K     &kp L    &kp SEMI _______
-_______  &kp Z    &kp X    &kp C    &kp V    &kp B            _______ _______          &kp N    &kp M    &kp COMMA &kp DOT  &kp FSLH _______
-                        _______ _______ _______ _______              _______ _______ _______ _______ 
+        &kp Q    &kp W    &kp E    &kp R    &kp T                                     &kp Y    &kp U    &kp I     &kp O    &kp P    
+        &kp A    &kp S    &kp D    &kp F    &kp G                                     &kp H    &kp J    &kp K     &kp L    &kp SEMI 
+_______ &kp Z    &kp X    &kp C    &kp V    &kp B                                     &kp N    &kp M    &kp COMMA &kp DOT  &kp FSLH  _______
+                                    _______ _______ _______              _______ _______ _______ 
       >;
-    };
-
-    dvorak_layer {
-      label =  "DVORAK";
-      bindings = <
-
-_______       &kp APOS    &kp COMMA &kp DOT    &kp P    &kp Y                                           &kp F    &kp G    &kp C    &kp R    &kp L _______
-_______       &kp A       &kp O     &kp E      &kp U    &kp I                                           &kp D    &kp H    &kp T    &kp N    &kp S _______
-_______       &kp SEMI    &kp Q     &kp J      &kp K    &kp X &kp PG_UP                     &kp PG_DN   &kp B    &kp M    &kp W    &kp V    &kp Z _______
-                        _______ _______ _______ _______              _______ _______ _______ _______ 
-      >;
-      sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN>;
     };
 
     lower_layer {
       label ="LOWER";
       bindings = <
-&kp ESC   &kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                                    &kp STAR  &kp N7    &kp N8    &kp N9    &kp KP_PLUS   _______
-_______   &kp CARET &kp AMPS   &kp UNDER &kp LBKT  &kp RBKT                                     &kp SLASH &kp N4    &kp N5    &kp N6    &kp KP_MINUS  _______
-_______   &kp COLON &kp LT     &kp GT    &kp LBRC  &kp RBRC                _______ _______      &kp N0    &kp N1    &kp N2    &kp N3    &kp EQUAL     _______
-                                _______ _______ _______ _______                  _______    _______ &mo L_ADJUST _______ 
+        &kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                     &kp STAR  &kp N7    &kp N8    &kp N9    &kp KP_PLUS 
+        &kp CARET &kp AMPS   &kp UNDER &kp LBKT  &kp RBKT                      &kp SLASH &kp N4    &kp N5    &kp N6    &kp KP_MINUS
+_______ &kp COLON &kp LT     &kp GT    &kp LBRC  &kp RBRC                      &kp N0    &kp N1    &kp N2    &kp N3    &kp EQUAL   _______
+                                            _______ _______ _______        _______ &mo L_ADJUST _______ 
       >;
     };
 
     raise_layer {
       label = "RAISE";
       bindings = <
-_______ &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                   &kp HOME &kp PG_DN &kp PG_UP &kp END     _______ _______  
-_______ &kp F6  &kp F7  &kp F8  &kp F9  &kp F10                                  &kp LEFT &kp DOWN  &kp UP    &kp RIGHT   _______ _______
-_______ &kp F11 &kp F12 _______ _______ _______           _______ _______        _______  _______   _______   _______     _______ _______
-                          _______  &mo L_ADJUST  _______  _______           _______ _______ _______ _______ 
+        &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                   &kp HOME &kp PG_DN &kp PG_UP &kp END     _______   
+        &kp F6  &kp F7  &kp F8  &kp F9  &kp F10                                  &kp LEFT &kp DOWN  &kp UP    &kp RIGHT   _______ 
+_______ &kp F11 &kp F12 _______ _______ _______                                  _______  _______   _______   _______     _______ _______
+                          _______  &mo L_ADJUST  _______           _______ _______ _______ 
       >;
-      sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN>;
     };
     
     adjust_layer {
       label = "ADJUST";
       bindings = <
-_______ &to L_BASE &to L_QWERTY &to L_DVORAK  &none     &none                         &ext_power EP_TOG &out OUT_TOG  &bt BT_NXT   &none     &kp KP_NUM   &none
-_______ &reset       _______    _______       _______   &bt BT_CLR                    &reset            &none         &none        &none     &kp CAPS     &none
-_______ _______      _______    _______       _______   _______ &kp C_PP   &kp C_MUTE &none             _______       _______      _______   &kp SLCK     &none
-                                      _______ &kp LGUI _______  &kp SPC   &kp ENTER _______ &kp RALT _______ 
+        &to L_BASE &to L_QWERTY &to L_DVORAK  &none     &none                         &ext_power EP_TOG &out OUT_TOG  &bt BT_NXT   &none     &kp KP_NUM
+        &reset       _______    _______       _______   &bt BT_CLR                    &reset            &none         &none        &none     &kp CAPS  
+_______ _______      _______    _______       _______   _______                       &none             _______       _______      _______   &kp SLCK    _______
+                                               _______ &kp LGUI &kp SPC        &kp ENTER &kp RALT _______ 
       >;
     };
   };
