@@ -37,11 +37,11 @@
       bindings = <&kp ESC>;
     };
     lshift {
-      key-positions = <2 15>;
+      key-positions = <2 12>;
       bindings = <&skq LSHIFT>;
     };
     semi {
-      key-positions = <3 16>;
+      key-positions = <3 13>;
       bindings = <&kp SEMI>;
     };
 
