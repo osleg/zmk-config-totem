@@ -13,9 +13,9 @@
 
 #define L_BASE 0
 #define L_QWERTY 1
-#define L_LOWER 3
-#define L_RAISE 4
-#define L_ADJUST 5
+#define L_LOWER 2
+#define L_RAISE 3
+#define L_ADJUST 4
 
 #define _______ &trans
 
