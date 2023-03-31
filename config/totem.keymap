@@ -183,7 +183,7 @@ _______ &kp F11 &kp F12 _______ _______ _______                                 
     adjust_layer {
       label = "ADJUST";
       bindings = <
-        &to L_BASE &to L_QWERTY &to L_DVORAK  &none     &none                         &ext_power EP_TOG &out OUT_TOG  &bt BT_NXT   &none     &kp KP_NUM
+        &to L_BASE &to L_QWERTY _______       &none     &none                         &ext_power EP_TOG &out OUT_TOG  &bt BT_NXT   &none     &kp KP_NUM
         &reset       _______    _______       _______   &bt BT_CLR                    &reset            &none         &none        &none     &kp CAPS  
 _______ _______      _______    _______       _______   _______                       &none             _______       _______      _______   &kp SLCK    _______
                                                _______ &kp LGUI &kp SPC        &kp ENTER &kp RALT _______ 
