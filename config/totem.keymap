@@ -199,7 +199,7 @@ _______ &kp F11 &kp F12 _______ _______ _______                                 
       label = "ADJUST";
       bindings = <
         &to L_BASE &to L_QWERTY _______       &none     &none                         &none             &out OUT_TOG  &bt BT_NXT   &none     &kp KP_NUM
-        &reset       _______    _______       _______   _______                       &reset            &none         &none        &none     &kp CAPS  
+        &sys_reset   _______    _______       _______   _______                       &sys_reset        &none         &none        &none     &kp CAPS  
 _______ _______      _______    _______       _______   _______                       &none             _______       _______      _______   &kp SLCK    &bt BT_CLR
                                                _______ &kp LGUI &kp SPC        &kp ENTER &kp RALT _______ 
       >;
